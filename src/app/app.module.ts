@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { UsersComponent } from './users/users.component';
 import { GoogleComponent } from './google/google.component';
 
 import { CanActivateSignIn } from './sign-in/can-activate.permission';
@@ -26,6 +27,7 @@ import { CustomRequestOptions } from './custom-request.options';
         PageNotFoundComponent,
         DashboardComponent,
         SignInComponent,
+        UsersComponent,
         GoogleComponent
     ],
     imports: [
