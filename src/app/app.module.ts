@@ -7,24 +7,26 @@ import { RouterModule } from '@angular/router';
 import { NgSemanticModule } from 'ng-semantic/ng-semantic';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { GoogleComponent } from './google/google.component';
 
 import { CanActivateSignIn } from './sign-in/can-activate.permission';
 import { AuthService } from './auth/auth.service';
 import { AuthGuardService } from './auth/auth-guard.service';
 
 import { AppRoutes } from './app.routes';
-import { SignInComponent } from './sign-in/sign-in.component';
 
 import { CustomRequestOptions } from './custom-request.options';
 
 @NgModule({
     declarations: [
         AppComponent,
-        DashboardComponent,
         PageNotFoundComponent,
-        SignInComponent
+        DashboardComponent,
+        SignInComponent,
+        GoogleComponent
     ],
     imports: [
         RouterModule.forRoot(AppRoutes),
