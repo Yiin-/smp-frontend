@@ -1,0 +1,39 @@
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+
+        <h2 class="ui teal image header">
+            <div class="content">
+                Social Marketing Platform
+            </div>
+        </h2>
+
+        <form [formGroup]="form" [class.error]="formState === 'ERROR'" class="ui large form">
+
+            <sm-loader [complete]="formState !== 'WAITING'" class="inverted" text="Loading..."></sm-loader>
+
+            <div class="ui stacked segment">
+
+                <div class="field">
+                    <sm-input icon="at" label="Email address" [control]="form.controls.email" class="left" placeholder="Enter email address..."></sm-input>
+                </div>
+
+                <div class="field">
+                    <sm-input icon="lock" type="password" label="Password" [control]="form.controls.password" class="left" placeholder="Enter your password..."></sm-input>
+                </div>
+
+
+                <div class="ui error message">
+                    <div class="header">
+                        Something's wrong
+                    </div>
+                    <p>
+                        Please check your credentials, either email doesn't exist or password is incorrect.
+                    </p>
+                </div>
+
+                <sm-button (click)="submit()" [disabled]="!form.valid" class="fluid large teal">Login</sm-button>
+            </div>
+
+        </form>
+    </div>
+</div>

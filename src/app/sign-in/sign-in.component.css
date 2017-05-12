@@ -1,0 +1,36 @@
+body {
+    background-color: #fafafa;
+}
+
+body>.grid {
+    height: 100%;
+}
+
+.image {
+    margin-top: -100px;
+}
+
+.column {
+    max-width: 450px;
+}
+
+.logo {
+    background-color: #35bdb2;
+    width: 150px;
+    height: 60px;
+    font-size: 48px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.content {
+    line-height: 60px;
+    margin-left: 15px;
+}
+
+.ui.form {
+    text-align: left;
+}

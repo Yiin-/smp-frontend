@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<sm-menu *ngIf="auth.signedIn()" class="secondary filled pointing navigation">
+    <div class="ui container">
+        <a sm-item routerLink="/dashboard" routerLinkActive="active">
+        Dashboard
+    </a>
+
+        <div class="right menu">
+            <a *ngIf="auth.signedIn()" (click)="auth.signOut()" class="ui item">
+                <i class="fa fa-btn fa-sign-out"></i> Sign out
+            </a>
+        </div>
+    </div>
+</sm-menu>
+
+<div class="ui container">
+    <div class="ui main container">
+        <div class="ui basic segment">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
